@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Sanchez);
+@import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    background-image: url(../img/background.jpg);
+	background-origin: content-box;
+	background-size: cover;
+	color: #FFF; 
+}
+
+header { 
+	font-family: 'Sanchez', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 36px; 
+	font-weight: 300;
+	color: #2C3539;
+	margin-left: 1em;
+}
+
+h1 { 
+	background-color: rgba(243,5,47,0.05); 
+	border: 1px #666; 
+	padding: 5px; 
+	margin-bottom: 0;
+} 
+
+.tag-line {
+    font-family: 'Fredericka the Great', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 30px;
+	margin-left: 0.5em;
+	margin-top: 0em;
+}

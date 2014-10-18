@@ -8,14 +8,31 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="icon" id ="bg" href="../img/background.jpg"/>
     </head>
-    <body>
-        
-        <header>
-            <h1>bloom.</h1>
-            <p class="tag-line"><i>"Every girl deserves flowers"</i></p>
-        </header>
+    <div id="container">
+        <body>
+            <main>
+                <h1>bloom.</h1>
+                <p class="tag-line"><i>"Every girl deserves flowers"</i></p>
 
-  
-    </body>
+                <form>
+                    <div class="form">
+                        
+                        <label for="Zipcode">zipcode:</label>
+
+                        <input type = "number" 
+                               name = "zipcode" 
+                               class = "form-control" 
+                               id = "zipcode" 
+                               maxlength = "5"
+                               placeholder = "enter here"/>
+                        <button type="Submit" onClick="">Submit</button>           
+                    </div>
+
+                </form>
+                <div id="footer"><p>&copy; 2014, Benny Tran &amp; George Yu</p></div>
+            </main> 
+        </body>
+    </div>
 </html>

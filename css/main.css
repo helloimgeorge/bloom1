@@ -2,17 +2,21 @@
 @import url(http://fonts.googleapis.com/css?family=Sanchez);
 @import url(http://fonts.googleapis.com/css?family=Fredericka+the+Great);
 
+
 body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
     background-image: url(../img/background.jpg);
-	background-origin: content-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 	background-size: cover;
-	color: #FFF; 
+	width: 100%;
+	height: 100%;
 }
 
-header { 
+main { 
 	font-family: 'Sanchez', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 36px; 
 	font-weight: 300;
@@ -33,3 +37,24 @@ h1 {
 	margin-left: 0.5em;
 	margin-top: 0em;
 }
+
+input {
+	width: 200px; 
+
+}
+
+.form {
+	height: 50px;
+	font-size: 20px;
+	margin-top: 3em;
+}
+
+#footer {
+   position:absolute;
+   bottom:1em;
+   height:35px;
+   right: 1%;
+   font-size: 18px;
+}
+
+

@@ -7,7 +7,7 @@ body {
     font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
     font-weight: 300;
-    background-image: url(../img/background.jpg);
+    background-image: url("../img/background.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -25,6 +25,7 @@ main {
 }
 
 h1 { 
+	color : red;
 	background-color: rgba(243,5,47,0.05); 
 	border: 1px #666; 
 	padding: 5px; 
@@ -56,5 +57,6 @@ input {
    right: 1%;
    font-size: 18px;
 }
+
 
 

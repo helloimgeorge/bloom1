@@ -17,7 +17,7 @@
                 <h1>bloom.</h1>
                 <p class="tag-line"><i>"Every girl deserves flowers"</i></p>
 
-                <form>
+                <form id="flowerForm">
                     <div class="form">
                         
                         <label for="Zipcode">zipcode:</label>
@@ -28,12 +28,17 @@
                                id = "zipcode" 
                                maxlength = "5"
                                placeholder = "enter here"/>
-                        <button type="Submit" onClick="">Submit</button>           
+                        <button type="Submit">Submit</button>           
                     </div>
                 </form>
+
+                <div id="results">
+                    <h1>Results</h1>
+                </div>
                 
-                <div id="footer"><p>&copy; 2014, Benny Tran &amp; George Yu</p></div>
+                
             </main> 
+            <div id="footer"><p>&copy; 2014, Benny Tran &amp; George Yu</p></div>
             </div>
 
             <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>

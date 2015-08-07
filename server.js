@@ -49,8 +49,8 @@ app.get('/', function(req, res) {
 
 router.route('/flowers')
 	.get(function(req, res) {
-		var city = "Seattle, WA";
-		findFlowerShops(city).then(function(result) {
+		var city = req.query.city;
+		var promise = findFlowerShops(city).then(function(result) {
 			// console.log(result);
 			res.send(result);
 		}, function(result) {

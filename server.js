@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var request = require('request');
 var router = express.Router();
+var q = require('q');
 
 app.use(express.static(__dirname + '/public'));
 
@@ -19,17 +20,21 @@ var requestOptions = {
 	json : true
 }
 
+// needs to return a promise
 function findFlowerShops(city) {
 	requestOptions.url = requestOptions.url + city;
-	request.get(requestOptions, function(err, res, body) {
+	var def = q.defer();
+	request(requestOptions, function(err, res, body) {
 		if (err) {
-			console.log(err);
+			def.reject(new Error(err));
 		} else {
-			console.log(body);
-			return body;
+			//console.log(body);
+			def.resolve(body);
 		}
 	});
+	return def.promise;
 }
+
 
 app.get('/', function(req, res) {
 	res.sendFile('index.html', function(err) {
@@ -45,9 +50,15 @@ app.get('/', function(req, res) {
 router.route('/flowers')
 	.get(function(req, res) {
 		var city = "Seattle, WA";
-		console.log("Worked!!!!");
-		res.send(findFlowerShops(city));
-});
+		findFlowerShops(city).then(function(result) {
+			// console.log(result);
+			res.send(result);
+		}, function(result) {
+			// console.log(result);
+			res.send(result);
+		});
+	});
+
 
 app.use('/api', router);
 

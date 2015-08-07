@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/tranbenny/bloom1#readme",
   "dependencies": {
+    "async": "^1.4.0",
     "bower": "^1.4.1",
     "express": "^4.13.3",
+    "q": "^1.4.1",
     "request": "^2.60.0"
   }
 }

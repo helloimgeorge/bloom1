@@ -1,0 +1,19 @@
+{
+  "name": "bloom1",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tranbenny/bloom1",
+  "authors": [
+    "tranbenny <tran.benny123@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
